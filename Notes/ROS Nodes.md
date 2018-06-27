@@ -8,7 +8,6 @@ or just manually re-source them
 ```
 source /home/pyzhu/catkin_ws/devel/setup.bash
 ```
-
 # Graph concepts
 - Nodes: an executable file. Can communicate with other nodes by ROS
 - Message: ROS data type. Used when subscribing or publishing to a topic

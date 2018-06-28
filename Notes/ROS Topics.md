@@ -103,5 +103,5 @@ The turtle needs a steady stream of commands at 1Hz to keep moving. This can be 
     $ rosrun rqt_plot rqt_plot  
 ```
 A new window pops out. Input **/turtle1/pose/x** -> + and **/turtle1/pose/y** -> +, x-y plot shows.
-Input **/turtle1/pose/** -> + shows all the data
+- pose: position. (x,y,theta)
     

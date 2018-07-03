@@ -155,7 +155,7 @@ In this example, it is not necessary to use ros::spinOnce(), since we are not re
 ```cpp
 loop_rate.sleep();
 ```
-Use this to sleep fir time remaining to let the publishing rate be 10 Hz.
+Use this to sleep for time remaining to let the publishing rate be 10 Hz.
 ### Summary
 - Initialize the ROS system
 - Advertise that we're going to be publishing **std_msgs/String** messages on the chatter topic to the master
@@ -235,7 +235,7 @@ This is the callback function that will be called when a new message is received
 ```cpp
 ros::Subscriber sub = n.subscribe("chatter", 1000, chatterCallback);
 ```
-Subscribe to the chatter topic with the master. ROS calls the callback function then a message is published to this topic. 
+Subscribe to the chatter topic with the master. ROS calls the callback function when a message is published to this topic. 
 **1000** is the size of the queue.
 **NodeHandle::subscribe()** returns a ros::subscriber object. You'll have to hold it on until you want to unsubscribe. When the Subscriber object is destructed, it will automatically unsubscribe from the chatter topic.
 There are different types of NodeHandle::subscribe() function, which allows you to specify a class member function, even anything can bee called by Boost.Function object.
